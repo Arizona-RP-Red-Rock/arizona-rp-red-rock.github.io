@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "Protected Area"
-AuthUserFile /Arizona-RP-Red-Rock/arizona-rp-red-rock.github.io/main/folder/.htpasswd
-Require valid-user
