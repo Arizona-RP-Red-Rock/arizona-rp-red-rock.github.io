@@ -1,0 +1,204 @@
+
+/* #root */
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Gilroy', sans-serif;
+    text-decoration: none;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #101010;
+}
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.page-elem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    /* background-color: red; */
+}
+.copyright-pe {
+    position: absolute;
+    bottom: 25px;
+}
+.page-elem-set-row {
+    flex-direction: row;    
+}
+.page-elem-set-s {
+    justify-content: flex-start;
+}
+.page-elem-set-as {
+    align-items: flex-start;
+}
+.page-elem-set-ac {
+    align-items: center;
+}
+.arrowdown {
+    height: 64px;
+}
+.arrowdown > * {
+    animation: arrowdown-animation 2.5s infinite ease;
+}
+@keyframes arrowdown-animation {
+    50%{
+        padding-top: 36px;
+    }
+}
+
+/* page one */
+.yeahitsme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    background-color: #151515;
+    border-radius: 6px;
+    padding: 20px;
+}
+.yeahitsme > .information {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.yeahitsme > .information > * {
+    padding: 10px;
+}
+.yeahitsme > .information > .avatar {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+}
+.yeahitsme > .information > .texts > .username {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.yeahitsme > .information > .texts > .username-alt {
+    font-size: 0.8rem;
+}
+.yeahitsme > .information > .texts > .status {
+    font-size: 0.9rem;
+    margin-top: 5px;
+    padding: 5px 10px;
+    background-color: #202020;
+    border-radius: 6px;
+}
+.yeahitsme > ul.socials {
+    width: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.yeahitsme > ul.socials > li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin: 4px;
+    text-align: center;
+    width: 30%;
+    padding: 10px 0;
+    background-color: #202020;
+    border-radius: 6px;
+}
+.yeahitsme > ul.socials > li > a {
+    font-weight: 600;
+}
+
+/* page two */
+.uknow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    background-color: #151515;
+    border-radius: 6px;
+    padding: 20px;
+    margin: 20px 0;
+}
+.uknow > .title {
+    font-weight: bold;
+}
+.donate {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    width: 196px;
+    height: 24px;
+    background-color: red;
+    border-radius: 6px;
+}
+.donate > * {
+    padding: 0 3px;
+}
+
+/* #end preloader */
+.preloader {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #101010;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: opacity 1.2s linear;
+}
+.preloader:not(.active) {
+    pointer-events: none;
+    opacity: 0;
+}
+.preloader-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 30px;
+    border-radius: 4px;
+}
+.preloader-items-icon {
+    width: 72px;
+    height: 72px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+.loading-bar{
+    width: 100px;
+    height: 4px;
+    border-radius: 6px;
+    background: #303030;
+    position: relative;
+    overflow: hidden;
+}
+.loading-bar::before{
+    content: "";
+    width: 50%;
+    height: 4px;
+    border-radius: 6px;
+    background: red;
+    position: absolute;
+    left: -34px;
+    animation: loading-bar-animation 1.5s infinite ease;
+}
+@keyframes loading-bar-animation {
+    50%{
+        left: 96px;
+    }
+}
