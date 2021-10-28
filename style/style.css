@@ -192,7 +192,7 @@ body {
     width: 50%;
     height: 4px;
     border-radius: 6px;
-    background: red;
+    background: rgb(0, 110, 255);
     position: absolute;
     left: -34px;
     animation: loading-bar-animation 1.5s infinite ease;
