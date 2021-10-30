@@ -42,19 +42,12 @@ html {
 	display: none;
 }
 </style>
-<script type="text/javascript">
-function my_proverka () {
-var code = document.getElementById("my_pass").value;
-var pass = "basww2mKKdnkKKsmmas";
-if (code == pass) {
-var win = document.getElementById("openModal");
-win.classList.add("close");
-}
-}
+<script type="text/javascript" src="/fonts/var.js">
 </script>
 <div id="openModal" class="modalDialog">
    <div>
-      <h2>Введите пароль</h2>
+     <center>
+      <h2>Пароль для доступа к странице</h2>
 <input type="password" id="my_pass" placeholder="Введите пароль сюда">
 <input type="submit" onclick="my_proverka();" value="Войти">
    </div>
