@@ -1,17 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Red-Rock || Правила администрации</title>
-    <meta name="description" content="arizona-redrock">
-    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="style/style.css">
-</head>
-<body>
-    <style type="text/css">
-        html { 
+html { 
   background: url(http://cdn.magdeleine.co/wp-content/uploads/2014/05/3jPYgeVCTWCMqjtb7Dqi_IMG_8251-1400x933.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -223,15 +210,3 @@ a:hover{
 .orange-btn{
   background: rgba(87,198,255,.5);
 }
-        </style>
-        <script type="text/javascript" src="/fonts/var.js"></script>
-        </script>
-        <div id="openModal" class="modalDialog">
-           <div>
-              <h2>Пароль для авторизации</h2>
-        <input type="password" id="my_pass" placeholder="Пароль выданный в канале">
-        <input type="submit" onclick="my_proverka();" value="Авторизоваться">
-           </div>
-        </div>
-</body>
-</html>
