@@ -229,11 +229,14 @@ a:hover{
         </style>
         <script type="text/javascript" src="/fonts/var.js"></script>
         </script>
-           <div>
-              <h2>Пароль для авторизации</h2>
-        <input type="password" id="my_pass" placeholder="Пароль выданный в канале">
-        <input type="submit" onclick="my_proverka();" value="Авторизоваться">
-           </div>
+        <h1>Sign In Form</h1>
+        <div id="wrapper">
+          <form id="signin" method="" action="" autocomplete="off">
+            <input type="text" id="user" name="user" placeholder="username" />
+            <input type="password" id="pass" name="pass" placeholder="password" />
+            <button type="submit" onclick="my_proverka();" >&#xf0da; </button>
+            <p>forgot your password? <a href="#">click here</a></p>
+          </form>
         </div>
 </body>
 </html>
