@@ -42,6 +42,44 @@ html {
 	display: none;
 }
 </style>
+<style>
+
+  .tab {
+      overflow: hidden;
+      border: 1px solid #7733ff;
+      background-color: #aa80ff;
+  }
+  
+  
+  .tab button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+  }
+  
+  
+  .tab button:hover {
+      background-color: #cc99ff;
+  }
+  
+  
+  .tab button.active {
+      background-color: #7733ff;
+    color: #fff;
+  }
+  
+  
+  .tabcontent {
+      display: none;
+      padding: 6px 12px;
+      border: 1px solid #7733ff;
+      border-top: none;
+  }
+  </style>
 <script type="text/javascript" src="/fonts/var.js">
 </script>
 <div id="openModal" class="modalDialog">
@@ -51,6 +89,21 @@ html {
 <input type="password" id="my_pass" placeholder="Пароль">
 <input type="submit" onclick="my_proverka();" value="Авторизоваться">
    </div>
+</div>
+<div class="tab">
+	<button class="tablinks" onclick="openCity(event, 'Правила сервера')">Правила сервера</button>
+	<button class="tablinks" onclick="openCity(event, 'Устав хелперов')">Устав хелперов</button>
+	<button class="tablinks" onclick="openCity(event, 'Критерии для лидера')">Критерии для лидера</button>
+	<button class="tablinks" onclick="openCity(event, 'Обязанности 1 лвл')">Обязанности 1 лвл</button>
+	<button class="tablinks" onclick="openCity(event, 'Обязанности 2 лвл')">Обязанности 2 лвл</button>
+	<button class="tablinks" onclick="openCity(event, 'Обязанности 3 лвл')">Обязанности 3 лвл</button>
+	<button class="tablinks" onclick="openCity(event, 'Обязанности 4 лвл')">Обязанности 4 лвл</button>
+	<button class="tablinks" onclick="openCity(event, 'Обязанности следящего')">Обязанности следящего</button>
+	<button class="tablinks" onclick="openCity(event, 'Наказания за невыполнение обяз адм')">Наказания за невыполнение обяз адм</button>
+	<button class="tablinks" onclick="openCity(event, 'Общие правила для администрации')">Общие правила адм</button>
+	<button class="tablinks" onclick="openCity(event, 'Система наказаний')">Система наказаний</button>
+	
+	
 </div>
 <div class="copyright-pe">
   all right reserved by redrockofficial / 2021
